@@ -17,21 +17,24 @@
                     <i class="fas fa-shopping-cart"></i> Cart
                 </a>
             </li>
+            <% if (auth != null) { %>
             <li class="nav-item">
                 <a class="nav-link" href="orders.jsp">
                     <i class="fas fa-box"></i> Orders
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="log-out">
                     <i class="fas fa-sign-out-alt"></i> Logout
                 </a>
             </li>
+            <% } else { %>
             <li class="nav-item">
                 <a class="nav-link" href="login.jsp">
                     <i class="fas fa-sign-in-alt"></i> Login
                 </a>
             </li>
+            <% } %>
         </ul>
     </div>
 </nav>
