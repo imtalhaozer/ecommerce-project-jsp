@@ -1,15 +1,14 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<%@include file="includes/head.jsp" %>
-<title>Welcome</title>
+    <%@include file="includes/head.jsp" %>
+    <title>Welcome | E-Commerce Shopping Cart</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<%@include file="includes/navbar.jsp"%>
+
+<!-- Footer -->
 <%@include file="includes/footer.jsp" %>
 </body>
 </html>
