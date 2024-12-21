@@ -30,14 +30,14 @@
                 for (Product product : products) {
         %>
         <div class="col-md-3">
-            <div class="card w-100" style="width: 18rem;">
-                <img class="card-img-top" src="<%= product.getImage() %>" alt="<%= product.getName() %>">
+            <div class="card w-100 mb-3" style="width: 18rem;">
+                <img class="card-img-top" src="product-image/<%= product.getImage() %>" alt="<%= product.getName() %>">
                 <div class="card-body">
                     <h5 class="card-title"><%= product.getName() %></h5>
                     <h6 class="price">Price: $<%= product.getPrice() %></h6>
                     <h6 class="category">Category: <%= product.getCategory() %></h6>
                     <div class="mt-3 d-flex justify-content-between">
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="add-to-cart?id=<%=product.getId()%>" class="btn btn-dark">Add to Cart</a>
                         <a href="#" class="btn btn-primary">Buy Now</a>
                     </div>
                 </div>
